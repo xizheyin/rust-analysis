@@ -1,0 +1,208 @@
+
+*********CallGraph Stats***************
+################ (program : string_reverse_c.bc)###############
+-------------------------------------------------------
+TotalNode           4
+TotalCycle          0
+MaxNodeInCycle      0
+NodeInCycle         0
+TotalEdge           2
+CalRetPairInCycle   0
+#######################################################
+
+*********General Stats***************
+################ (program : string_reverse_c.bc)###############
+BBWith2Succ         1
+BBWith3Succ         0
+TotalPointers       107
+TotalObjects        15
+TotalFieldObjects   6
+MaxStructSize       5
+TotalSVFStmts       97
+TotalPTASVFStmts    53
+FIObjNum            0
+FSObjNum            14
+AddrsNum            32
+LoadsNum            13
+StoresNum           17
+CopysNum            8
+GepsNum             16
+CallsNum            0
+ReturnsNum          0
+FunctionObjs        4
+GlobalObjs          1
+HeapObjs            0
+StackObjs           8
+VarStructObj        1
+VarArrayObj         1
+ConstStructObj      0
+ConstArrayObj       1
+NonPtrObj           11
+ConstantObj         0
+IndCallSites        0
+TotalCallSite       2
+-------------------------------------------------------
+LLVMIRTime          0.003
+SymbolTableTime     0
+SVFIRTime           0
+#######################################################
+
+*********Constraint Graph Stats***************
+################ (program : string_reverse_c.bc)###############
+-------------------------------------------------------
+AvgIn/OutCopyEdge   0.393939
+AvgIn/OutLoadEdge   0.0151515
+AvgIn/OutAddrEdge   0.378788
+AvgIn/OutEdge       0.909091
+LocalVarInRecur     0
+NumOfCGNode         140
+TotalValidNode      66
+TotalValidObjNode   18
+NumOfCGEdge         35
+NumOfAddrs          25
+NumOfCopys          10
+NumOfGeps           16
+NumOfLoads          1
+NumOfStores         8
+MaxInCopyEdge       2
+MaxOutCopyEdge      6
+MaxInLoadEdge       1
+MaxOutLoadEdge      1
+MaxInStoreEdge      2
+MaxOutStoreEdge     1
+AvgIn/OutStoreEdge  0
+MaxInAddrEdge       1
+MaxOutAddrEdge      12
+#######################################################
+
+*********Andersen Pointer Analysis Stats***************
+################ (program : string_reverse_c.bc)###############
+-------------------------------------------------------
+TotalTime           0
+SCCDetectTime       0
+SCCMergeTime        0
+LoadStoreTime       0
+CopyGepTime         0
+UpdateCGTime        0
+AvgPtsSetSize       0.328571
+AvgTopLvlPtsSize    0.934783
+CollapseTime        0
+Pointers            105
+TotalPointers       107
+TotalObjects        21
+IndCallSites        0
+AddrProcessed       25
+CopyProcessed       6
+GepProcessed        16
+LoadProcessed       0
+StoreProcessed      7
+NumOfSFRs           0
+NumOfFieldExpand    0
+MemObjects          15
+DummyFieldPtrs      2
+FieldObjs           6
+MaxPtsSetSize       1
+SolveIterations     2
+IndEdgeSolved       0
+NumOfSCCDetect      2
+TotalCycleNum       0
+TotalPWCCycleNum    0
+NodesInCycles       0
+MaxNodesInSCC       0
+NullPointer         0
+PointsToConstPtr    1
+PointsToBlkPtr      0
+#######################################################
+
+****Persistent Points-To Cache Statistics: Andersen's analysis bitvector****
+################ (program : string_reverse_c.bc)###############
+UniquePointsToSets       21
+TotalUnions              47
+PropertyUnions           47
+UniqueUnions             0
+LookupUnions             0
+PreemptiveUnions         0
+TotalComplements         274
+PropertyComplements      274
+UniqueComplements        0
+LookupComplements        0
+PreemptiveComplements    0
+TotalIntersections       7
+PropertyIntersections    7
+UniqueIntersections      0
+LookupIntersections      0
+PreemptiveIntersections  0
+#######################################################
+
+*********Memory SSA Statistics***************
+################ (program : string_reverse_c.bc)###############
+-------------------------------------------------------
+AverageRegSize      1
+SSARenameTime       0
+InsertPHITime       0
+GenMUCHITime        0
+GenRegionTime       0
+TotalMSSATime       0
+BBHasMSSAPhi        1
+MSSAPhi             3
+StoreHasChi         7
+LoadHasMu           13
+CSHasMu             0
+CSHasChi            0
+FunHasRetMu         1
+FunHasEntryChi      1
+StoreChiNode        7
+LoadMuNode          13
+CSMuNode            0
+CSChiNode           0
+FunRetMu            5
+FunEntryChi         5
+MemRegions          9
+MaxRegSize          1
+#######################################################
+
+****SVFG Statistics****
+
+************************
+################ (program : string_reverse_c.bc)###############
+-------------------------------------------------------
+TotalTime           0
+ConnDirEdgeTime     0
+ConnIndEdgeTime     0
+TLNodeTime          0
+ATNodeTime          0
+OptTime             0
+AvgWeight           1
+TotalNode           121
+TotalEdge           121
+FormalIn            5
+FormalOut           5
+FormalParam         4
+FormalRet           0
+ActualIn            0
+ActualOut           0
+ActualParam         5
+ActualRet           1
+Addr                32
+Copy                8
+Gep                 16
+PHI                 0
+DirectEdge          90
+IndirectEdge        31
+IndirectEdgeLabels  31
+IndCallEdge         0
+IndRetEdge          0
+DirectCallEdge      0
+DirectRetEdge       0
+AvgInDegree         1
+AvgOutDegree        1
+MaxInDegree         3
+MaxOutDegree        8
+AvgIndInDeg         1
+AvgIndOutDeg        2
+MaxIndInDeg         2
+MaxIndOutDeg        8
+MSSAPhi             3
+Load                13
+Store               17
+#######################################################

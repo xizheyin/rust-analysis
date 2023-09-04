@@ -1,0 +1,208 @@
+
+*********CallGraph Stats***************
+################ (program : fibonacci_c.bc)###############
+-------------------------------------------------------
+TotalNode           1
+TotalCycle          0
+MaxNodeInCycle      0
+NodeInCycle         0
+TotalEdge           0
+CalRetPairInCycle   0
+#######################################################
+
+*********General Stats***************
+################ (program : fibonacci_c.bc)###############
+BBWith2Succ         1
+BBWith3Succ         0
+TotalPointers       66
+TotalObjects        7
+TotalFieldObjects   1
+MaxStructSize       5
+TotalSVFStmts       53
+TotalPTASVFStmts    22
+FIObjNum            0
+FSObjNum            6
+AddrsNum            22
+LoadsNum            7
+StoresNum           6
+CopysNum            4
+GepsNum             5
+CallsNum            0
+ReturnsNum          0
+FunctionObjs        1
+GlobalObjs          1
+HeapObjs            0
+StackObjs           3
+VarStructObj        1
+VarArrayObj         2
+ConstStructObj      0
+ConstArrayObj       0
+NonPtrObj           5
+ConstantObj         0
+IndCallSites        0
+TotalCallSite       0
+-------------------------------------------------------
+LLVMIRTime          0.003
+SymbolTableTime     0
+SVFIRTime           0
+#######################################################
+
+*********Constraint Graph Stats***************
+################ (program : fibonacci_c.bc)###############
+-------------------------------------------------------
+AvgIn/OutCopyEdge   0.206897
+AvgIn/OutLoadEdge   0
+AvgIn/OutAddrEdge   0.551724
+AvgIn/OutEdge       0.758621
+LocalVarInRecur     0
+NumOfCGNode         77
+TotalValidNode      29
+TotalValidObjNode   6
+NumOfCGEdge         6
+NumOfAddrs          16
+NumOfCopys          1
+NumOfGeps           5
+NumOfLoads          0
+NumOfStores         0
+MaxInCopyEdge       1
+MaxOutCopyEdge      5
+MaxInLoadEdge       0
+MaxOutLoadEdge      0
+MaxInStoreEdge      0
+MaxOutStoreEdge     0
+AvgIn/OutStoreEdge  0
+MaxInAddrEdge       1
+MaxOutAddrEdge      11
+#######################################################
+
+*********Andersen Pointer Analysis Stats***************
+################ (program : fibonacci_c.bc)###############
+-------------------------------------------------------
+TotalTime           0.001
+SCCDetectTime       0
+SCCMergeTime        0
+LoadStoreTime       0
+CopyGepTime         0
+UpdateCGTime        0
+AvgPtsSetSize       0.272727
+AvgTopLvlPtsSize    0.954545
+CollapseTime        0
+Pointers            66
+TotalPointers       66
+TotalObjects        8
+IndCallSites        0
+AddrProcessed       16
+CopyProcessed       0
+GepProcessed        5
+LoadProcessed       0
+StoreProcessed      0
+NumOfSFRs           0
+NumOfFieldExpand    0
+MemObjects          7
+DummyFieldPtrs      0
+FieldObjs           1
+MaxPtsSetSize       1
+SolveIterations     1
+IndEdgeSolved       0
+NumOfSCCDetect      1
+TotalCycleNum       0
+TotalPWCCycleNum    0
+NodesInCycles       0
+MaxNodesInSCC       0
+NullPointer         0
+PointsToConstPtr    0
+PointsToBlkPtr      0
+#######################################################
+
+****Persistent Points-To Cache Statistics: Andersen's analysis bitvector****
+################ (program : fibonacci_c.bc)###############
+UniquePointsToSets       8
+TotalUnions              21
+PropertyUnions           21
+UniqueUnions             0
+LookupUnions             0
+PreemptiveUnions         0
+TotalComplements         76
+PropertyComplements      76
+UniqueComplements        0
+LookupComplements        0
+PreemptiveComplements    0
+TotalIntersections       0
+PropertyIntersections    0
+UniqueIntersections      0
+LookupIntersections      0
+PreemptiveIntersections  0
+#######################################################
+
+*********Memory SSA Statistics***************
+################ (program : fibonacci_c.bc)###############
+-------------------------------------------------------
+AverageRegSize      1
+SSARenameTime       0
+InsertPHITime       0
+GenMUCHITime        0
+GenRegionTime       0
+TotalMSSATime       0
+BBHasMSSAPhi        1
+MSSAPhi             2
+StoreHasChi         6
+LoadHasMu           7
+CSHasMu             0
+CSHasChi            0
+FunHasRetMu         1
+FunHasEntryChi      1
+StoreChiNode        6
+LoadMuNode          7
+CSMuNode            0
+CSChiNode           0
+FunRetMu            3
+FunEntryChi         3
+MemRegions          3
+MaxRegSize          1
+#######################################################
+
+****SVFG Statistics****
+
+************************
+################ (program : fibonacci_c.bc)###############
+-------------------------------------------------------
+TotalTime           0
+ConnDirEdgeTime     0
+ConnIndEdgeTime     0
+TLNodeTime          0
+ATNodeTime          0
+OptTime             0
+AvgWeight           1
+TotalNode           62
+TotalEdge           57
+FormalIn            3
+FormalOut           3
+FormalParam         0
+FormalRet           0
+ActualIn            0
+ActualOut           0
+ActualParam         0
+ActualRet           0
+Addr                22
+Copy                4
+Gep                 5
+PHI                 0
+DirectEdge          37
+IndirectEdge        20
+IndirectEdgeLabels  20
+IndCallEdge         0
+IndRetEdge          0
+DirectCallEdge      0
+DirectRetEdge       0
+AvgInDegree         0
+AvgOutDegree        0
+MaxInDegree         3
+MaxOutDegree        7
+AvgIndInDeg         1
+AvgIndOutDeg        1
+MaxIndInDeg         2
+MaxIndOutDeg        7
+MSSAPhi             2
+Load                7
+Store               6
+#######################################################

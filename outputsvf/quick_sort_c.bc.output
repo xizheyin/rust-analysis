@@ -1,0 +1,208 @@
+
+*********CallGraph Stats***************
+################ (program : quick_sort_c.bc)###############
+-------------------------------------------------------
+TotalNode           2
+TotalCycle          1
+MaxNodeInCycle      1
+NodeInCycle         1
+TotalEdge           3
+CalRetPairInCycle   2
+#######################################################
+
+*********General Stats***************
+################ (program : quick_sort_c.bc)###############
+BBWith2Succ         7
+BBWith3Succ         0
+TotalPointers       169
+TotalObjects        13
+TotalFieldObjects   0
+MaxStructSize       5
+TotalSVFStmts       152
+TotalPTASVFStmts    47
+FIObjNum            1
+FSObjNum            11
+AddrsNum            29
+LoadsNum            46
+StoresNum           14
+CopysNum            10
+GepsNum             10
+CallsNum            9
+ReturnsNum          0
+FunctionObjs        2
+GlobalObjs          1
+HeapObjs            0
+StackObjs           8
+VarStructObj        1
+VarArrayObj         2
+ConstStructObj      0
+ConstArrayObj       0
+NonPtrObj           10
+ConstantObj         0
+IndCallSites        0
+TotalCallSite       3
+-------------------------------------------------------
+LLVMIRTime          0.003
+SymbolTableTime     0
+SVFIRTime           0
+#######################################################
+
+*********Constraint Graph Stats***************
+################ (program : quick_sort_c.bc)###############
+-------------------------------------------------------
+AvgIn/OutCopyEdge   0.37037
+AvgIn/OutLoadEdge   0.166667
+AvgIn/OutAddrEdge   0.388889
+AvgIn/OutEdge       0.944444
+LocalVarInRecur     6
+NumOfCGNode         183
+TotalValidNode      54
+TotalValidObjNode   11
+NumOfCGEdge         30
+NumOfAddrs          21
+NumOfCopys          10
+NumOfGeps           10
+NumOfLoads          9
+NumOfStores         1
+MaxInCopyEdge       1
+MaxOutCopyEdge      8
+MaxInLoadEdge       1
+MaxOutLoadEdge      9
+MaxInStoreEdge      1
+MaxOutStoreEdge     1
+AvgIn/OutStoreEdge  0
+MaxInAddrEdge       1
+MaxOutAddrEdge      11
+#######################################################
+
+*********Andersen Pointer Analysis Stats***************
+################ (program : quick_sort_c.bc)###############
+-------------------------------------------------------
+TotalTime           0.001
+SCCDetectTime       0
+SCCMergeTime        0
+LoadStoreTime       0
+CopyGepTime         0
+UpdateCGTime        0
+AvgPtsSetSize       0.236559
+AvgTopLvlPtsSize    0.977273
+CollapseTime        0
+Pointers            169
+TotalPointers       169
+TotalObjects        13
+IndCallSites        0
+AddrProcessed       22
+CopyProcessed       18
+GepProcessed        11
+LoadProcessed       10
+StoreProcessed      1
+NumOfSFRs           0
+NumOfFieldExpand    0
+MemObjects          13
+DummyFieldPtrs      0
+FieldObjs           0
+MaxPtsSetSize       1
+SolveIterations     3
+IndEdgeSolved       0
+NumOfSCCDetect      3
+TotalCycleNum       1
+TotalPWCCycleNum    0
+NodesInCycles       4
+MaxNodesInSCC       4
+NullPointer         0
+PointsToConstPtr    0
+PointsToBlkPtr      0
+#######################################################
+
+****Persistent Points-To Cache Statistics: Andersen's analysis bitvector****
+################ (program : quick_sort_c.bc)###############
+UniquePointsToSets       14
+TotalUnions              66
+PropertyUnions           66
+UniqueUnions             0
+LookupUnions             0
+PreemptiveUnions         0
+TotalComplements         565
+PropertyComplements      560
+UniqueComplements        1
+LookupComplements        3
+PreemptiveComplements    1
+TotalIntersections       17
+PropertyIntersections    15
+UniqueIntersections      0
+LookupIntersections      0
+PreemptiveIntersections  2
+#######################################################
+
+*********Memory SSA Statistics***************
+################ (program : quick_sort_c.bc)###############
+-------------------------------------------------------
+AverageRegSize      1
+SSARenameTime       0
+InsertPHITime       0
+GenMUCHITime        0
+GenRegionTime       0
+TotalMSSATime       0
+BBHasMSSAPhi        5
+MSSAPhi             11
+StoreHasChi         14
+LoadHasMu           46
+CSHasMu             3
+CSHasChi            3
+FunHasRetMu         2
+FunHasEntryChi      2
+StoreChiNode        14
+LoadMuNode          46
+CSMuNode            3
+CSChiNode           3
+FunRetMu            9
+FunEntryChi         9
+MemRegions          8
+MaxRegSize          1
+#######################################################
+
+****SVFG Statistics****
+
+************************
+################ (program : quick_sort_c.bc)###############
+-------------------------------------------------------
+TotalTime           0
+ConnDirEdgeTime     0
+ConnIndEdgeTime     0
+TLNodeTime          0
+ATNodeTime          0
+OptTime             0
+AvgWeight           1
+TotalNode           191
+TotalEdge           258
+FormalIn            9
+FormalOut           9
+FormalParam         3
+FormalRet           0
+ActualIn            3
+ActualOut           3
+ActualParam         9
+ActualRet           0
+Addr                29
+Copy                10
+Gep                 10
+PHI                 2
+DirectEdge          158
+IndirectEdge        100
+IndirectEdgeLabels  100
+IndCallEdge         3
+IndRetEdge          3
+DirectCallEdge      9
+DirectRetEdge       0
+AvgInDegree         1
+AvgOutDegree        1
+MaxInDegree         3
+MaxOutDegree        13
+AvgIndInDeg         1
+AvgIndOutDeg        2
+MaxIndInDeg         3
+MaxIndOutDeg        11
+MSSAPhi             11
+Load                46
+Store               14
+#######################################################

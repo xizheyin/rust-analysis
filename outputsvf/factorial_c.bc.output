@@ -1,0 +1,208 @@
+
+*********CallGraph Stats***************
+################ (program : factorial_c.bc)###############
+-------------------------------------------------------
+TotalNode           2
+TotalCycle          1
+MaxNodeInCycle      1
+NodeInCycle         1
+TotalEdge           2
+CalRetPairInCycle   1
+#######################################################
+
+*********General Stats***************
+################ (program : factorial_c.bc)###############
+BBWith2Succ         1
+BBWith3Succ         0
+TotalPointers       54
+TotalObjects        9
+TotalFieldObjects   0
+MaxStructSize       5
+TotalSVFStmts       43
+TotalPTASVFStmts    19
+FIObjNum            0
+FSObjNum            8
+AddrsNum            21
+LoadsNum            5
+StoresNum           5
+CopysNum            1
+GepsNum             0
+CallsNum            2
+ReturnsNum          2
+FunctionObjs        2
+GlobalObjs          1
+HeapObjs            0
+StackObjs           4
+VarStructObj        1
+VarArrayObj         1
+ConstStructObj      0
+ConstArrayObj       0
+NonPtrObj           7
+ConstantObj         0
+IndCallSites        0
+TotalCallSite       2
+-------------------------------------------------------
+LLVMIRTime          0.003
+SymbolTableTime     0
+SVFIRTime           0
+#######################################################
+
+*********Constraint Graph Stats***************
+################ (program : factorial_c.bc)###############
+-------------------------------------------------------
+AvgIn/OutCopyEdge   0.0357143
+AvgIn/OutLoadEdge   0
+AvgIn/OutAddrEdge   0.642857
+AvgIn/OutEdge       0.678571
+LocalVarInRecur     2
+NumOfCGNode         67
+TotalValidNode      28
+TotalValidObjNode   8
+NumOfCGEdge         1
+NumOfAddrs          18
+NumOfCopys          1
+NumOfGeps           0
+NumOfLoads          0
+NumOfStores         0
+MaxInCopyEdge       1
+MaxOutCopyEdge      1
+MaxInLoadEdge       0
+MaxOutLoadEdge      0
+MaxInStoreEdge      0
+MaxOutStoreEdge     0
+AvgIn/OutStoreEdge  0
+MaxInAddrEdge       1
+MaxOutAddrEdge      11
+#######################################################
+
+*********Andersen Pointer Analysis Stats***************
+################ (program : factorial_c.bc)###############
+-------------------------------------------------------
+TotalTime           0
+SCCDetectTime       0
+SCCMergeTime        0
+LoadStoreTime       0
+CopyGepTime         0
+UpdateCGTime        0
+AvgPtsSetSize       0.268657
+AvgTopLvlPtsSize    0.947368
+CollapseTime        0
+Pointers            54
+TotalPointers       54
+TotalObjects        9
+IndCallSites        0
+AddrProcessed       18
+CopyProcessed       0
+GepProcessed        0
+LoadProcessed       0
+StoreProcessed      0
+NumOfSFRs           0
+NumOfFieldExpand    0
+MemObjects          9
+DummyFieldPtrs      0
+FieldObjs           0
+MaxPtsSetSize       1
+SolveIterations     1
+IndEdgeSolved       0
+NumOfSCCDetect      1
+TotalCycleNum       0
+TotalPWCCycleNum    0
+NodesInCycles       0
+MaxNodesInSCC       0
+NullPointer         0
+PointsToConstPtr    0
+PointsToBlkPtr      0
+#######################################################
+
+****Persistent Points-To Cache Statistics: Andersen's analysis bitvector****
+################ (program : factorial_c.bc)###############
+UniquePointsToSets       9
+TotalUnions              18
+PropertyUnions           18
+UniqueUnions             0
+LookupUnions             0
+PreemptiveUnions         0
+TotalComplements         67
+PropertyComplements      67
+UniqueComplements        0
+LookupComplements        0
+PreemptiveComplements    0
+TotalIntersections       0
+PropertyIntersections    0
+UniqueIntersections      0
+LookupIntersections      0
+PreemptiveIntersections  0
+#######################################################
+
+*********Memory SSA Statistics***************
+################ (program : factorial_c.bc)###############
+-------------------------------------------------------
+AverageRegSize      1
+SSARenameTime       0
+InsertPHITime       0
+GenMUCHITime        0
+GenRegionTime       0
+TotalMSSATime       0
+BBHasMSSAPhi        1
+MSSAPhi             1
+StoreHasChi         5
+LoadHasMu           5
+CSHasMu             0
+CSHasChi            0
+FunHasRetMu         2
+FunHasEntryChi      2
+StoreChiNode        5
+LoadMuNode          5
+CSMuNode            0
+CSChiNode           0
+FunRetMu            4
+FunEntryChi         4
+MemRegions          4
+MaxRegSize          1
+#######################################################
+
+****SVFG Statistics****
+
+************************
+################ (program : factorial_c.bc)###############
+-------------------------------------------------------
+TotalTime           0
+ConnDirEdgeTime     0
+ConnIndEdgeTime     0
+TLNodeTime          0
+ATNodeTime          0
+OptTime             0
+AvgWeight           1
+TotalNode           55
+TotalEdge           45
+FormalIn            4
+FormalOut           4
+FormalParam         1
+FormalRet           1
+ActualIn            0
+ActualOut           0
+ActualParam         2
+ActualRet           2
+Addr                21
+Copy                1
+Gep                 0
+PHI                 1
+DirectEdge          29
+IndirectEdge        16
+IndirectEdgeLabels  16
+IndCallEdge         0
+IndRetEdge          0
+DirectCallEdge      2
+DirectRetEdge       2
+AvgInDegree         0
+AvgOutDegree        0
+MaxInDegree         3
+MaxOutDegree        4
+AvgIndInDeg         1
+AvgIndOutDeg        1
+MaxIndInDeg         2
+MaxIndOutDeg        4
+MSSAPhi             1
+Load                5
+Store               5
+#######################################################
