@@ -3,44 +3,44 @@
 ################ (program : gcd_c.bc)###############
 -------------------------------------------------------
 TotalNode           2
-TotalCycle          1
-MaxNodeInCycle      1
-NodeInCycle         1
-TotalEdge           2
-CalRetPairInCycle   1
+TotalCycle          0
+MaxNodeInCycle      0
+NodeInCycle         0
+TotalEdge           0
+CalRetPairInCycle   0
 #######################################################
 
 *********General Stats***************
 ################ (program : gcd_c.bc)###############
-BBWith2Succ         1
+BBWith2Succ         2
 BBWith3Succ         0
-TotalPointers       62
-TotalObjects        11
+TotalPointers       38
+TotalObjects        5
 TotalFieldObjects   0
 MaxStructSize       5
-TotalSVFStmts       52
-TotalPTASVFStmts    21
+TotalSVFStmts       25
+TotalPTASVFStmts    15
 FIObjNum            0
-FSObjNum            10
-AddrsNum            24
-LoadsNum            8
-StoresNum           7
+FSObjNum            4
+AddrsNum            15
+LoadsNum            0
+StoresNum           0
 CopysNum            1
 GepsNum             0
-CallsNum            4
-ReturnsNum          2
+CallsNum            0
+ReturnsNum          0
 FunctionObjs        2
 GlobalObjs          1
 HeapObjs            0
-StackObjs           6
+StackObjs           0
 VarStructObj        1
 VarArrayObj         1
 ConstStructObj      0
 ConstArrayObj       0
-NonPtrObj           9
+NonPtrObj           3
 ConstantObj         0
 IndCallSites        0
-TotalCallSite       2
+TotalCallSite       0
 -------------------------------------------------------
 LLVMIRTime          0.003
 SymbolTableTime     0
@@ -50,16 +50,16 @@ SVFIRTime           0
 *********Constraint Graph Stats***************
 ################ (program : gcd_c.bc)###############
 -------------------------------------------------------
-AvgIn/OutCopyEdge   0.03125
+AvgIn/OutCopyEdge   0.05
 AvgIn/OutLoadEdge   0
-AvgIn/OutAddrEdge   0.625
-AvgIn/OutEdge       0.65625
-LocalVarInRecur     3
-NumOfCGNode         77
-TotalValidNode      32
-TotalValidObjNode   10
+AvgIn/OutAddrEdge   0.7
+AvgIn/OutEdge       0.75
+LocalVarInRecur     0
+NumOfCGNode         47
+TotalValidNode      20
+TotalValidObjNode   4
 NumOfCGEdge         1
-NumOfAddrs          20
+NumOfAddrs          14
 NumOfCopys          1
 NumOfGeps           0
 NumOfLoads          0
@@ -84,21 +84,21 @@ SCCMergeTime        0
 LoadStoreTime       0
 CopyGepTime         0
 UpdateCGTime        0
-AvgPtsSetSize       0.25974
-AvgTopLvlPtsSize    0.952381
+AvgPtsSetSize       0.297872
+AvgTopLvlPtsSize    0.933333
 CollapseTime        0
-Pointers            62
-TotalPointers       62
-TotalObjects        11
+Pointers            38
+TotalPointers       38
+TotalObjects        5
 IndCallSites        0
-AddrProcessed       20
+AddrProcessed       14
 CopyProcessed       0
 GepProcessed        0
 LoadProcessed       0
 StoreProcessed      0
 NumOfSFRs           0
 NumOfFieldExpand    0
-MemObjects          11
+MemObjects          5
 DummyFieldPtrs      0
 FieldObjs           0
 MaxPtsSetSize       1
@@ -116,14 +116,14 @@ PointsToBlkPtr      0
 
 ****Persistent Points-To Cache Statistics: Andersen's analysis bitvector****
 ################ (program : gcd_c.bc)###############
-UniquePointsToSets       11
-TotalUnions              20
-PropertyUnions           20
+UniquePointsToSets       5
+TotalUnions              14
+PropertyUnions           14
 UniqueUnions             0
 LookupUnions             0
 PreemptiveUnions         0
-TotalComplements         77
-PropertyComplements      77
+TotalComplements         47
+PropertyComplements      47
 UniqueComplements        0
 LookupComplements        0
 PreemptiveComplements    0
@@ -137,28 +137,28 @@ PreemptiveIntersections  0
 *********Memory SSA Statistics***************
 ################ (program : gcd_c.bc)###############
 -------------------------------------------------------
-AverageRegSize      1
+AverageRegSize      0
 SSARenameTime       0
 InsertPHITime       0
 GenMUCHITime        0
 GenRegionTime       0
 TotalMSSATime       0
-BBHasMSSAPhi        1
-MSSAPhi             1
-StoreHasChi         7
-LoadHasMu           8
+BBHasMSSAPhi        0
+MSSAPhi             0
+StoreHasChi         0
+LoadHasMu           0
 CSHasMu             0
 CSHasChi            0
 FunHasRetMu         2
-FunHasEntryChi      2
-StoreChiNode        7
-LoadMuNode          8
+FunHasEntryChi      0
+StoreChiNode        0
+LoadMuNode          0
 CSMuNode            0
 CSChiNode           0
-FunRetMu            6
-FunEntryChi         6
-MemRegions          6
-MaxRegSize          1
+FunRetMu            0
+FunEntryChi         0
+MemRegions          0
+MaxRegSize          0
 #######################################################
 
 ****SVFG Statistics****
@@ -172,37 +172,37 @@ ConnIndEdgeTime     0
 TLNodeTime          0
 ATNodeTime          0
 OptTime             0
-AvgWeight           1
-TotalNode           69
-TotalEdge           62
-FormalIn            6
-FormalOut           6
+AvgWeight           0
+TotalNode           29
+TotalEdge           15
+FormalIn            0
+FormalOut           0
 FormalParam         2
 FormalRet           1
 ActualIn            0
 ActualOut           0
-ActualParam         4
-ActualRet           2
-Addr                24
+ActualParam         0
+ActualRet           0
+Addr                15
 Copy                1
 Gep                 0
-PHI                 1
-DirectEdge          39
-IndirectEdge        23
-IndirectEdgeLabels  23
+PHI                 4
+DirectEdge          15
+IndirectEdge        0
+IndirectEdgeLabels  0
 IndCallEdge         0
 IndRetEdge          0
-DirectCallEdge      4
-DirectRetEdge       2
+DirectCallEdge      0
+DirectRetEdge       0
 AvgInDegree         0
 AvgOutDegree        0
-MaxInDegree         3
-MaxOutDegree        4
-AvgIndInDeg         1
-AvgIndOutDeg        1
-MaxIndInDeg         2
-MaxIndOutDeg        4
-MSSAPhi             1
-Load                8
-Store               7
+MaxInDegree         2
+MaxOutDegree        3
+AvgIndInDeg         0
+AvgIndOutDeg        0
+MaxIndInDeg         0
+MaxIndOutDeg        0
+MSSAPhi             0
+Load                0
+Store               0
 #######################################################

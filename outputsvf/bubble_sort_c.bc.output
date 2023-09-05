@@ -2,72 +2,72 @@
 *********CallGraph Stats***************
 ################ (program : bubble_sort_c.bc)###############
 -------------------------------------------------------
-TotalNode           4
+TotalNode           6
 TotalCycle          0
 MaxNodeInCycle      0
 NodeInCycle         0
-TotalEdge           2
+TotalEdge           3
 CalRetPairInCycle   0
 #######################################################
 
 *********General Stats***************
 ################ (program : bubble_sort_c.bc)###############
-BBWith2Succ         3
+BBWith2Succ         30
 BBWith3Succ         0
-TotalPointers       144
-TotalObjects        18
-TotalFieldObjects   5
+TotalPointers       354
+TotalObjects        14
+TotalFieldObjects   6
 MaxStructSize       5
-TotalSVFStmts       132
-TotalPTASVFStmts    66
-FIObjNum            1
-FSObjNum            16
-AddrsNum            35
-LoadsNum            26
-StoresNum           21
-CopysNum            10
-GepsNum             17
-CallsNum            2
+TotalSVFStmts       314
+TotalPTASVFStmts    96
+FIObjNum            0
+FSObjNum            13
+AddrsNum            39
+LoadsNum            31
+StoresNum           59
+CopysNum            5
+GepsNum             59
+CallsNum            0
 ReturnsNum          0
-FunctionObjs        4
+FunctionObjs        6
 GlobalObjs          1
 HeapObjs            0
-StackObjs           11
+StackObjs           5
 VarStructObj        1
 VarArrayObj         1
 ConstStructObj      0
 ConstArrayObj       1
-NonPtrObj           13
+NonPtrObj           10
 ConstantObj         0
 IndCallSites        0
-TotalCallSite       2
+TotalCallSite       3
 -------------------------------------------------------
 LLVMIRTime          0.003
 SymbolTableTime     0
-SVFIRTime           0
+SVFIRTime           0.001
 #######################################################
 
 *********Constraint Graph Stats***************
 ################ (program : bubble_sort_c.bc)###############
 -------------------------------------------------------
-AvgIn/OutCopyEdge   0.444444
-AvgIn/OutLoadEdge   0.0864198
-AvgIn/OutAddrEdge   0.345679
-AvgIn/OutEdge       0.987654
+AvgIn/OutCopyEdge   0.642202
+AvgIn/OutLoadEdge   0.00917431
+AvgIn/OutAddrEdge   0.220183
+AvgIn/OutEdge       0.944954
 LocalVarInRecur     0
-NumOfCGNode         179
-TotalValidNode      81
-TotalValidObjNode   21
-NumOfCGEdge         52
-NumOfAddrs          28
-NumOfCopys          19
-NumOfGeps           17
-NumOfLoads          7
-NumOfStores         9
+NumOfCGNode         388
+TotalValidNode      109
+TotalValidObjNode   17
+NumOfCGEdge         79
+NumOfAddrs          24
+NumOfCopys          11
+NumOfGeps           59
+NumOfLoads          1
+NumOfStores         8
 MaxInCopyEdge       2
-MaxOutCopyEdge      6
+MaxOutCopyEdge      44
 MaxInLoadEdge       1
-MaxOutLoadEdge      6
+MaxOutLoadEdge      1
 MaxInStoreEdge      2
 MaxOutStoreEdge     1
 AvgIn/OutStoreEdge  0
@@ -78,33 +78,33 @@ MaxOutAddrEdge      12
 *********Andersen Pointer Analysis Stats***************
 ################ (program : bubble_sort_c.bc)###############
 -------------------------------------------------------
-TotalTime           0.001
+TotalTime           0
 SCCDetectTime       0
 SCCMergeTime        0
 LoadStoreTime       0
 CopyGepTime         0
 UpdateCGTime        0
-AvgPtsSetSize       0.329609
-AvgTopLvlPtsSize    0.948276
+AvgPtsSetSize       0.213918
+AvgTopLvlPtsSize    0.898876
 CollapseTime        0
-Pointers            142
-TotalPointers       144
-TotalObjects        23
+Pointers            352
+TotalPointers       354
+TotalObjects        20
 IndCallSites        0
-AddrProcessed       28
-CopyProcessed       23
-GepProcessed        18
-LoadProcessed       6
-StoreProcessed      8
+AddrProcessed       24
+CopyProcessed       7
+GepProcessed        53
+LoadProcessed       0
+StoreProcessed      7
 NumOfSFRs           0
 NumOfFieldExpand    0
-MemObjects          18
+MemObjects          14
 DummyFieldPtrs      2
-FieldObjs           5
+FieldObjs           6
 MaxPtsSetSize       1
-SolveIterations     3
+SolveIterations     2
 IndEdgeSolved       0
-NumOfSCCDetect      3
+NumOfSCCDetect      2
 TotalCycleNum       0
 TotalPWCCycleNum    0
 NodesInCycles       0
@@ -116,22 +116,22 @@ PointsToBlkPtr      0
 
 ****Persistent Points-To Cache Statistics: Andersen's analysis bitvector****
 ################ (program : bubble_sort_c.bc)###############
-UniquePointsToSets       24
-TotalUnions              80
-PropertyUnions           80
+UniquePointsToSets       20
+TotalUnions              84
+PropertyUnions           84
 UniqueUnions             0
 LookupUnions             0
 PreemptiveUnions         0
-TotalComplements         544
-PropertyComplements      538
-UniqueComplements        1
-LookupComplements        4
-PreemptiveComplements    1
-TotalIntersections       17
-PropertyIntersections    15
+TotalComplements         770
+PropertyComplements      770
+UniqueComplements        0
+LookupComplements        0
+PreemptiveComplements    0
+TotalIntersections       7
+PropertyIntersections    7
 UniqueIntersections      0
 LookupIntersections      0
-PreemptiveIntersections  2
+PreemptiveIntersections  0
 #######################################################
 
 *********Memory SSA Statistics***************
@@ -143,21 +143,21 @@ InsertPHITime       0
 GenMUCHITime        0
 GenRegionTime       0
 TotalMSSATime       0
-BBHasMSSAPhi        3
-MSSAPhi             9
-StoreHasChi         11
-LoadHasMu           26
-CSHasMu             1
-CSHasChi            1
+BBHasMSSAPhi        21
+MSSAPhi             21
+StoreHasChi         49
+LoadHasMu           31
+CSHasMu             0
+CSHasChi            0
 FunHasRetMu         2
-FunHasEntryChi      2
-StoreChiNode        11
-LoadMuNode          26
-CSMuNode            1
-CSChiNode           1
-FunRetMu            9
-FunEntryChi         9
-MemRegions          12
+FunHasEntryChi      1
+StoreChiNode        43
+LoadMuNode          27
+CSMuNode            0
+CSChiNode           0
+FunRetMu            2
+FunEntryChi         2
+MemRegions          6
 MaxRegSize          1
 #######################################################
 
@@ -173,36 +173,36 @@ TLNodeTime          0
 ATNodeTime          0
 OptTime             0
 AvgWeight           1
-TotalNode           172
-TotalEdge           195
-FormalIn            9
-FormalOut           9
+TotalNode           354
+TotalEdge           502
+FormalIn            2
+FormalOut           2
 FormalParam         6
 FormalRet           0
-ActualIn            1
-ActualOut           1
-ActualParam         6
+ActualIn            0
+ActualOut           0
+ActualParam         8
 ActualRet           0
-Addr                35
-Copy                10
-Gep                 17
-PHI                 0
-DirectEdge          128
-IndirectEdge        67
-IndirectEdgeLabels  67
-IndCallEdge         1
-IndRetEdge          1
-DirectCallEdge      2
+Addr                39
+Copy                5
+Gep                 59
+PHI                 23
+DirectEdge          388
+IndirectEdge        114
+IndirectEdgeLabels  114
+IndCallEdge         0
+IndRetEdge          0
+DirectCallEdge      0
 DirectRetEdge       0
 AvgInDegree         1
 AvgOutDegree        1
 MaxInDegree         3
-MaxOutDegree        10
+MaxOutDegree        44
 AvgIndInDeg         1
-AvgIndOutDeg        2
+AvgIndOutDeg        1
 MaxIndInDeg         2
-MaxIndOutDeg        10
-MSSAPhi             9
-Load                26
-Store               21
+MaxIndOutDeg        4
+MSSAPhi             21
+Load                31
+Store               59
 #######################################################

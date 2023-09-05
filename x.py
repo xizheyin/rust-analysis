@@ -47,16 +47,16 @@ for file_name in file_list:
         # 编译C源文件为LLVM汇编文件
         if file_name.endswith(".c"):
             ll_file_path = os.path.join(output_ll_dir + file_name_without_extension + "_c.ll")
-            subprocess.run(["clang", "-w", "-O0", "-S", "-emit-llvm", "-o", ll_file_path, file_path])
+            subprocess.run(["clang", "-w", "-O3", "-S", "-emit-llvm", "-o", ll_file_path, file_path])
             bc_file_path = os.path.join(output_bc_dir + file_name_without_extension + "_c.bc")
-            subprocess.run(["clang", "-w", "-O0", "-c", "-emit-llvm", "-o", bc_file_path, file_path])
+            subprocess.run(["clang", "-w", "-O3", "-c", "-emit-llvm", "-o", bc_file_path, file_path])
 
         # 编译Rust源文件为LLVM汇编文件
         if file_name.endswith(".rs"):
             ll_file_path = os.path.join(output_ll_dir + file_name_without_extension + "_rs.ll")
-            subprocess.run(["rustc", "-Awarnings", "-C", "opt-level=0", "--emit", "llvm-ir", "-o", ll_file_path, file_path])
+            subprocess.run(["rustc", "-Awarnings", "-C", "opt-level=3", "--emit", "llvm-ir", "-o", ll_file_path, file_path])
             bc_file_path = os.path.join(output_bc_dir + file_name_without_extension + "_rs.bc")
-            subprocess.run(["rustc", "-Awarnings", "-C", "opt-level=0", "--emit", "llvm-bc", "-o", bc_file_path, file_path])
+            subprocess.run(["rustc", "-Awarnings", "-C", "opt-level=3", "--emit", "llvm-bc", "-o", bc_file_path, file_path])
 
         print(f"编译完成: {file_name}")
 

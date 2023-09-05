@@ -12,37 +12,37 @@ CalRetPairInCycle   0
 
 *********General Stats***************
 ################ (program : fibonacci_c.bc)###############
-BBWith2Succ         1
+BBWith2Succ         0
 BBWith3Succ         0
-TotalPointers       66
-TotalObjects        7
-TotalFieldObjects   1
+TotalPointers       26
+TotalObjects        4
+TotalFieldObjects   0
 MaxStructSize       5
-TotalSVFStmts       53
-TotalPTASVFStmts    22
+TotalSVFStmts       15
+TotalPTASVFStmts    14
 FIObjNum            0
-FSObjNum            6
-AddrsNum            22
-LoadsNum            7
-StoresNum           6
-CopysNum            4
-GepsNum             5
+FSObjNum            3
+AddrsNum            14
+LoadsNum            0
+StoresNum           0
+CopysNum            1
+GepsNum             0
 CallsNum            0
 ReturnsNum          0
 FunctionObjs        1
 GlobalObjs          1
 HeapObjs            0
-StackObjs           3
+StackObjs           0
 VarStructObj        1
-VarArrayObj         2
+VarArrayObj         1
 ConstStructObj      0
 ConstArrayObj       0
-NonPtrObj           5
+NonPtrObj           2
 ConstantObj         0
 IndCallSites        0
 TotalCallSite       0
 -------------------------------------------------------
-LLVMIRTime          0.003
+LLVMIRTime          0.002
 SymbolTableTime     0
 SVFIRTime           0
 #######################################################
@@ -50,22 +50,22 @@ SVFIRTime           0
 *********Constraint Graph Stats***************
 ################ (program : fibonacci_c.bc)###############
 -------------------------------------------------------
-AvgIn/OutCopyEdge   0.206897
+AvgIn/OutCopyEdge   0.0555556
 AvgIn/OutLoadEdge   0
-AvgIn/OutAddrEdge   0.551724
-AvgIn/OutEdge       0.758621
+AvgIn/OutAddrEdge   0.722222
+AvgIn/OutEdge       0.777778
 LocalVarInRecur     0
-NumOfCGNode         77
-TotalValidNode      29
-TotalValidObjNode   6
-NumOfCGEdge         6
-NumOfAddrs          16
+NumOfCGNode         33
+TotalValidNode      18
+TotalValidObjNode   3
+NumOfCGEdge         1
+NumOfAddrs          13
 NumOfCopys          1
-NumOfGeps           5
+NumOfGeps           0
 NumOfLoads          0
 NumOfStores         0
 MaxInCopyEdge       1
-MaxOutCopyEdge      5
+MaxOutCopyEdge      1
 MaxInLoadEdge       0
 MaxOutLoadEdge      0
 MaxInStoreEdge      0
@@ -78,29 +78,29 @@ MaxOutAddrEdge      11
 *********Andersen Pointer Analysis Stats***************
 ################ (program : fibonacci_c.bc)###############
 -------------------------------------------------------
-TotalTime           0.001
+TotalTime           0
 SCCDetectTime       0
 SCCMergeTime        0
 LoadStoreTime       0
 CopyGepTime         0
 UpdateCGTime        0
-AvgPtsSetSize       0.272727
-AvgTopLvlPtsSize    0.954545
+AvgPtsSetSize       0.393939
+AvgTopLvlPtsSize    0.928571
 CollapseTime        0
-Pointers            66
-TotalPointers       66
-TotalObjects        8
+Pointers            26
+TotalPointers       26
+TotalObjects        4
 IndCallSites        0
-AddrProcessed       16
+AddrProcessed       13
 CopyProcessed       0
-GepProcessed        5
+GepProcessed        0
 LoadProcessed       0
 StoreProcessed      0
 NumOfSFRs           0
 NumOfFieldExpand    0
-MemObjects          7
+MemObjects          4
 DummyFieldPtrs      0
-FieldObjs           1
+FieldObjs           0
 MaxPtsSetSize       1
 SolveIterations     1
 IndEdgeSolved       0
@@ -116,14 +116,14 @@ PointsToBlkPtr      0
 
 ****Persistent Points-To Cache Statistics: Andersen's analysis bitvector****
 ################ (program : fibonacci_c.bc)###############
-UniquePointsToSets       8
-TotalUnions              21
-PropertyUnions           21
+UniquePointsToSets       4
+TotalUnions              13
+PropertyUnions           13
 UniqueUnions             0
 LookupUnions             0
 PreemptiveUnions         0
-TotalComplements         76
-PropertyComplements      76
+TotalComplements         33
+PropertyComplements      33
 UniqueComplements        0
 LookupComplements        0
 PreemptiveComplements    0
@@ -137,28 +137,28 @@ PreemptiveIntersections  0
 *********Memory SSA Statistics***************
 ################ (program : fibonacci_c.bc)###############
 -------------------------------------------------------
-AverageRegSize      1
+AverageRegSize      0
 SSARenameTime       0
 InsertPHITime       0
 GenMUCHITime        0
 GenRegionTime       0
 TotalMSSATime       0
-BBHasMSSAPhi        1
-MSSAPhi             2
-StoreHasChi         6
-LoadHasMu           7
+BBHasMSSAPhi        0
+MSSAPhi             0
+StoreHasChi         0
+LoadHasMu           0
 CSHasMu             0
 CSHasChi            0
 FunHasRetMu         1
-FunHasEntryChi      1
-StoreChiNode        6
-LoadMuNode          7
+FunHasEntryChi      0
+StoreChiNode        0
+LoadMuNode          0
 CSMuNode            0
 CSChiNode           0
-FunRetMu            3
-FunEntryChi         3
-MemRegions          3
-MaxRegSize          1
+FunRetMu            0
+FunEntryChi         0
+MemRegions          0
+MaxRegSize          0
 #######################################################
 
 ****SVFG Statistics****
@@ -172,37 +172,37 @@ ConnIndEdgeTime     0
 TLNodeTime          0
 ATNodeTime          0
 OptTime             0
-AvgWeight           1
-TotalNode           62
-TotalEdge           57
-FormalIn            3
-FormalOut           3
+AvgWeight           0
+TotalNode           16
+TotalEdge           1
+FormalIn            0
+FormalOut           0
 FormalParam         0
 FormalRet           0
 ActualIn            0
 ActualOut           0
 ActualParam         0
 ActualRet           0
-Addr                22
-Copy                4
-Gep                 5
+Addr                14
+Copy                1
+Gep                 0
 PHI                 0
-DirectEdge          37
-IndirectEdge        20
-IndirectEdgeLabels  20
+DirectEdge          1
+IndirectEdge        0
+IndirectEdgeLabels  0
 IndCallEdge         0
 IndRetEdge          0
 DirectCallEdge      0
 DirectRetEdge       0
 AvgInDegree         0
 AvgOutDegree        0
-MaxInDegree         3
-MaxOutDegree        7
-AvgIndInDeg         1
-AvgIndOutDeg        1
-MaxIndInDeg         2
-MaxIndOutDeg        7
-MSSAPhi             2
-Load                7
-Store               6
+MaxInDegree         1
+MaxOutDegree        1
+AvgIndInDeg         0
+AvgIndOutDeg        0
+MaxIndInDeg         0
+MaxIndOutDeg        0
+MSSAPhi             0
+Load                0
+Store               0
 #######################################################
