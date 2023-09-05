@@ -64,4 +64,4 @@ bc_file_list = os.listdir(output_bc_dir)
 for bc_file in bc_file_list:
     if not bc_file.endswith('.svf.bc'):
         log = open(output_svf_dir + bc_file + '.output', 'x')
-        subprocess.run(["/home/yxz/SVF/Release-build/bin/svf-ex", output_bc_dir + bc_file], stdout=log)
+        subprocess.run(["/home/yxz/SVF/Release-build/bin/saber", output_bc_dir + bc_file], stdout=log)

@@ -3,10 +3,10 @@
 ################ (program : bubble_sort_c.bc)###############
 -------------------------------------------------------
 TotalNode           6
+TotalEdge           3
 TotalCycle          0
 MaxNodeInCycle      0
 NodeInCycle         0
-TotalEdge           3
 CalRetPairInCycle   0
 #######################################################
 
@@ -54,7 +54,6 @@ AvgIn/OutCopyEdge   0.642202
 AvgIn/OutLoadEdge   0.00917431
 AvgIn/OutAddrEdge   0.220183
 AvgIn/OutEdge       0.944954
-LocalVarInRecur     0
 NumOfCGNode         388
 TotalValidNode      109
 TotalValidObjNode   17
@@ -73,6 +72,7 @@ MaxOutStoreEdge     1
 AvgIn/OutStoreEdge  0
 MaxInAddrEdge       1
 MaxOutAddrEdge      12
+LocalVarInRecur     0
 #######################################################
 
 *********Andersen Pointer Analysis Stats***************
@@ -143,21 +143,21 @@ InsertPHITime       0
 GenMUCHITime        0
 GenRegionTime       0
 TotalMSSATime       0
-BBHasMSSAPhi        21
-MSSAPhi             21
-StoreHasChi         49
-LoadHasMu           31
+BBHasMSSAPhi        0
+MSSAPhi             0
+StoreHasChi         1
+LoadHasMu           1
 CSHasMu             0
 CSHasChi            0
 FunHasRetMu         2
 FunHasEntryChi      1
-StoreChiNode        43
-LoadMuNode          27
+StoreChiNode        1
+LoadMuNode          1
 CSMuNode            0
 CSChiNode           0
 FunRetMu            2
 FunEntryChi         2
-MemRegions          6
+MemRegions          4
 MaxRegSize          1
 #######################################################
 
@@ -173,36 +173,82 @@ TLNodeTime          0
 ATNodeTime          0
 OptTime             0
 AvgWeight           1
-TotalNode           354
-TotalEdge           502
+TotalNode           108
 FormalIn            2
 FormalOut           2
-FormalParam         6
+FormalParam         3
 FormalRet           0
 ActualIn            0
 ActualOut           0
-ActualParam         8
+ActualParam         4
 ActualRet           0
-Addr                39
-Copy                5
+Addr                24
+Copy                4
 Gep                 59
-PHI                 23
-DirectEdge          388
-IndirectEdge        114
-IndirectEdgeLabels  114
+PHI                 0
+TotalEdge           79
+DirectEdge          75
+IndirectEdge        4
+IndirectEdgeLabels  4
 IndCallEdge         0
 IndRetEdge          0
 DirectCallEdge      0
 DirectRetEdge       0
-AvgInDegree         1
-AvgOutDegree        1
-MaxInDegree         3
+AvgInDegree         0
+AvgOutDegree        0
+MaxInDegree         2
 MaxOutDegree        44
 AvgIndInDeg         1
 AvgIndOutDeg        1
-MaxIndInDeg         2
-MaxIndOutDeg        4
-MSSAPhi             21
-Load                31
-Store               59
+MaxIndInDeg         1
+MaxIndOutDeg        2
+MSSAPhi             0
+Load                1
+Store               8
+#######################################################
+
+****SVFG Statistics****
+
+************************
+################ (program : bubble_sort_c.bc)###############
+-------------------------------------------------------
+TotalTime           0
+ConnDirEdgeTime     0
+ConnIndEdgeTime     0
+TLNodeTime          0
+ATNodeTime          0
+OptTime             0
+AvgWeight           1
+TotalNode           108
+FormalIn            2
+FormalOut           2
+FormalParam         3
+FormalRet           0
+ActualIn            0
+ActualOut           0
+ActualParam         4
+ActualRet           0
+Addr                24
+Copy                4
+Gep                 59
+PHI                 0
+TotalEdge           79
+DirectEdge          75
+IndirectEdge        4
+IndirectEdgeLabels  4
+IndCallEdge         0
+IndRetEdge          0
+DirectCallEdge      0
+DirectRetEdge       0
+AvgInDegree         0
+AvgOutDegree        0
+MaxInDegree         2
+MaxOutDegree        44
+AvgIndInDeg         1
+AvgIndOutDeg        1
+MaxIndInDeg         1
+MaxIndOutDeg        2
+MSSAPhi             0
+Load                1
+Store               8
 #######################################################

@@ -3,10 +3,10 @@
 ################ (program : gcd_c.bc)###############
 -------------------------------------------------------
 TotalNode           2
+TotalEdge           0
 TotalCycle          0
 MaxNodeInCycle      0
 NodeInCycle         0
-TotalEdge           0
 CalRetPairInCycle   0
 #######################################################
 
@@ -42,7 +42,7 @@ ConstantObj         0
 IndCallSites        0
 TotalCallSite       0
 -------------------------------------------------------
-LLVMIRTime          0.003
+LLVMIRTime          0.002
 SymbolTableTime     0
 SVFIRTime           0
 #######################################################
@@ -54,7 +54,6 @@ AvgIn/OutCopyEdge   0.05
 AvgIn/OutLoadEdge   0
 AvgIn/OutAddrEdge   0.7
 AvgIn/OutEdge       0.75
-LocalVarInRecur     0
 NumOfCGNode         47
 TotalValidNode      20
 TotalValidObjNode   4
@@ -73,6 +72,7 @@ MaxOutStoreEdge     0
 AvgIn/OutStoreEdge  0
 MaxInAddrEdge       1
 MaxOutAddrEdge      11
+LocalVarInRecur     0
 #######################################################
 
 *********Andersen Pointer Analysis Stats***************
@@ -173,21 +173,21 @@ TLNodeTime          0
 ATNodeTime          0
 OptTime             0
 AvgWeight           0
-TotalNode           29
-TotalEdge           15
+TotalNode           16
 FormalIn            0
 FormalOut           0
-FormalParam         2
-FormalRet           1
+FormalParam         0
+FormalRet           0
 ActualIn            0
 ActualOut           0
 ActualParam         0
 ActualRet           0
-Addr                15
+Addr                14
 Copy                1
 Gep                 0
-PHI                 4
-DirectEdge          15
+PHI                 0
+TotalEdge           1
+DirectEdge          1
 IndirectEdge        0
 IndirectEdgeLabels  0
 IndCallEdge         0
@@ -196,8 +196,54 @@ DirectCallEdge      0
 DirectRetEdge       0
 AvgInDegree         0
 AvgOutDegree        0
-MaxInDegree         2
-MaxOutDegree        3
+MaxInDegree         1
+MaxOutDegree        1
+AvgIndInDeg         0
+AvgIndOutDeg        0
+MaxIndInDeg         0
+MaxIndOutDeg        0
+MSSAPhi             0
+Load                0
+Store               0
+#######################################################
+
+****SVFG Statistics****
+
+************************
+################ (program : gcd_c.bc)###############
+-------------------------------------------------------
+TotalTime           0
+ConnDirEdgeTime     0
+ConnIndEdgeTime     0
+TLNodeTime          0
+ATNodeTime          0
+OptTime             0
+AvgWeight           0
+TotalNode           16
+FormalIn            0
+FormalOut           0
+FormalParam         0
+FormalRet           0
+ActualIn            0
+ActualOut           0
+ActualParam         0
+ActualRet           0
+Addr                14
+Copy                1
+Gep                 0
+PHI                 0
+TotalEdge           1
+DirectEdge          1
+IndirectEdge        0
+IndirectEdgeLabels  0
+IndCallEdge         0
+IndRetEdge          0
+DirectCallEdge      0
+DirectRetEdge       0
+AvgInDegree         0
+AvgOutDegree        0
+MaxInDegree         1
+MaxOutDegree        1
 AvgIndInDeg         0
 AvgIndOutDeg        0
 MaxIndInDeg         0

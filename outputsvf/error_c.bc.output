@@ -1,9 +1,9 @@
 
 *********CallGraph Stats***************
-################ (program : array_max_rs.bc)###############
+################ (program : error_c.bc)###############
 -------------------------------------------------------
-TotalNode           11
-TotalEdge           8
+TotalNode           6
+TotalEdge           3
 TotalCycle          0
 MaxNodeInCycle      0
 NodeInCycle         0
@@ -11,72 +11,72 @@ CalRetPairInCycle   0
 #######################################################
 
 *********General Stats***************
-################ (program : array_max_rs.bc)###############
+################ (program : error_c.bc)###############
 BBWith2Succ         0
 BBWith3Succ         0
-TotalPointers       99
-TotalObjects        17
-TotalFieldObjects   4
+TotalPointers       74
+TotalObjects        15
+TotalFieldObjects   6
 MaxStructSize       5
-TotalSVFStmts       62
-TotalPTASVFStmts    53
+TotalSVFStmts       67
+TotalPTASVFStmts    54
 FIObjNum            0
-FSObjNum            16
-AddrsNum            29
-LoadsNum            2
-StoresNum           6
-CopysNum            15
-GepsNum             4
-CallsNum            2
+FSObjNum            14
+AddrsNum            34
+LoadsNum            1
+StoresNum           15
+CopysNum            3
+GepsNum             13
+CallsNum            0
 ReturnsNum          0
-FunctionObjs        11
-GlobalObjs          2
-HeapObjs            0
-StackObjs           2
+FunctionObjs        6
+GlobalObjs          1
+HeapObjs            1
+StackObjs           5
 VarStructObj        1
-VarArrayObj         1
-ConstStructObj      1
-ConstArrayObj       0
-NonPtrObj           12
+VarArrayObj         0
+ConstStructObj      0
+ConstArrayObj       1
+NonPtrObj           10
 ConstantObj         0
-IndCallSites        2
-TotalCallSite       10
+IndCallSites        0
+TotalCallSite       3
 -------------------------------------------------------
 LLVMIRTime          0.003
 SymbolTableTime     0
-SVFIRTime           0.001
+SVFIRTime           0
 #######################################################
 
 *********Constraint Graph Stats***************
-################ (program : array_max_rs.bc)###############
+################ (program : error_c.bc)###############
 -------------------------------------------------------
-AvgIn/OutCopyEdge   0.357143
-AvgIn/OutLoadEdge   0.0285714
-AvgIn/OutAddrEdge   0.371429
-AvgIn/OutEdge       0.842857
-NumOfCGNode         136
-TotalValidNode      70
-TotalValidObjNode   20
-NumOfCGEdge         33
+AvgIn/OutCopyEdge   0.409091
+AvgIn/OutLoadEdge   0.0151515
+AvgIn/OutAddrEdge   0.393939
+AvgIn/OutEdge       0.969697
+NumOfCGNode         110
+TotalValidNode      66
+TotalValidObjNode   19
+NumOfCGEdge         38
 NumOfAddrs          26
-NumOfCopys          21
-NumOfGeps           4
-NumOfLoads          2
-NumOfStores         6
-MaxInCopyEdge       2
+NumOfCopys          14
+NumOfGeps           13
+NumOfLoads          1
+NumOfStores         10
+MaxInCopyEdge       3
 MaxOutCopyEdge      5
 MaxInLoadEdge       1
 MaxOutLoadEdge      1
-MaxInStoreEdge      1
-MaxOutStoreEdge     2
+MaxInStoreEdge      3
+MaxOutStoreEdge     1
 AvgIn/OutStoreEdge  0
 MaxInAddrEdge       1
-MaxOutAddrEdge      11
+MaxOutAddrEdge      13
 LocalVarInRecur     0
 #######################################################
 
 *********Andersen Pointer Analysis Stats***************
-################ (program : array_max_rs.bc)###############
+################ (program : error_c.bc)###############
 -------------------------------------------------------
 TotalTime           0
 SCCDetectTime       0
@@ -84,24 +84,24 @@ SCCMergeTime        0
 LoadStoreTime       0
 CopyGepTime         0
 UpdateCGTime        0
-AvgPtsSetSize       0.330882
-AvgTopLvlPtsSize    0.816327
+AvgPtsSetSize       0.409091
+AvgTopLvlPtsSize    0.911111
 CollapseTime        0
-Pointers            98
-TotalPointers       99
+Pointers            72
+TotalPointers       74
 TotalObjects        21
-IndCallSites        2
+IndCallSites        0
 AddrProcessed       26
-CopyProcessed       15
-GepProcessed        4
+CopyProcessed       8
+GepProcessed        13
 LoadProcessed       0
-StoreProcessed      6
+StoreProcessed      10
 NumOfSFRs           0
 NumOfFieldExpand    0
-MemObjects          17
-DummyFieldPtrs      1
-FieldObjs           4
-MaxPtsSetSize       1
+MemObjects          15
+DummyFieldPtrs      2
+FieldObjs           6
+MaxPtsSetSize       2
 SolveIterations     2
 IndEdgeSolved       0
 NumOfSCCDetect      2
@@ -109,33 +109,33 @@ TotalCycleNum       0
 TotalPWCCycleNum    0
 NodesInCycles       0
 MaxNodesInSCC       0
-NullPointer         2
-PointsToConstPtr    0
+NullPointer         0
+PointsToConstPtr    1
 PointsToBlkPtr      0
 #######################################################
 
 ****Persistent Points-To Cache Statistics: Andersen's analysis bitvector****
-################ (program : array_max_rs.bc)###############
-UniquePointsToSets       21
-TotalUnions              45
-PropertyUnions           45
-UniqueUnions             0
+################ (program : error_c.bc)###############
+UniquePointsToSets       22
+TotalUnions              49
+PropertyUnions           46
+UniqueUnions             1
 LookupUnions             0
-PreemptiveUnions         0
-TotalComplements         268
-PropertyComplements      268
+PreemptiveUnions         2
+TotalComplements         214
+PropertyComplements      214
 UniqueComplements        0
 LookupComplements        0
 PreemptiveComplements    0
-TotalIntersections       6
-PropertyIntersections    6
+TotalIntersections       10
+PropertyIntersections    10
 UniqueIntersections      0
 LookupIntersections      0
 PreemptiveIntersections  0
 #######################################################
 
 *********Memory SSA Statistics***************
-################ (program : array_max_rs.bc)###############
+################ (program : error_c.bc)###############
 -------------------------------------------------------
 AverageRegSize      1
 SSARenameTime       0
@@ -145,26 +145,26 @@ GenRegionTime       0
 TotalMSSATime       0
 BBHasMSSAPhi        0
 MSSAPhi             0
-StoreHasChi         2
-LoadHasMu           2
-CSHasMu             0
-CSHasChi            0
-FunHasRetMu         7
-FunHasEntryChi      2
-StoreChiNode        2
-LoadMuNode          0
-CSMuNode            0
-CSChiNode           0
-FunRetMu            2
-FunEntryChi         2
-MemRegions          2
+StoreHasChi         1
+LoadHasMu           1
+CSHasMu             1
+CSHasChi            1
+FunHasRetMu         1
+FunHasEntryChi      1
+StoreChiNode        1
+LoadMuNode          1
+CSMuNode            1
+CSChiNode           1
+FunRetMu            3
+FunEntryChi         3
+MemRegions          5
 MaxRegSize          1
 #######################################################
 
 ****SVFG Statistics****
 
 ************************
-################ (program : array_max_rs.bc)###############
+################ (program : error_c.bc)###############
 -------------------------------------------------------
 TotalTime           0
 ConnDirEdgeTime     0
@@ -173,26 +173,26 @@ TLNodeTime          0
 ATNodeTime          0
 OptTime             0
 AvgWeight           1
-TotalNode           76
-FormalIn            2
-FormalOut           2
-FormalParam         7
-FormalRet           0
-ActualIn            0
-ActualOut           0
-ActualParam         13
+TotalNode           71
+FormalIn            3
+FormalOut           3
+FormalParam         2
+FormalRet           1
+ActualIn            1
+ActualOut           1
+ActualParam         5
 ActualRet           0
 Addr                26
-Copy                13
-Gep                 4
-PHI                 0
-TotalEdge           40
-DirectEdge          38
-IndirectEdge        2
-IndirectEdgeLabels  2
+Copy                3
+Gep                 13
+PHI                 1
+TotalEdge           39
+DirectEdge          33
+IndirectEdge        6
+IndirectEdgeLabels  6
 IndCallEdge         0
 IndRetEdge          0
-DirectCallEdge      2
+DirectCallEdge      0
 DirectRetEdge       0
 AvgInDegree         0
 AvgOutDegree        0
@@ -201,16 +201,16 @@ MaxOutDegree        5
 AvgIndInDeg         1
 AvgIndOutDeg        1
 MaxIndInDeg         1
-MaxIndOutDeg        1
+MaxIndOutDeg        2
 MSSAPhi             0
-Load                2
-Store               6
+Load                1
+Store               10
 #######################################################
 
 ****SVFG Statistics****
 
 ************************
-################ (program : array_max_rs.bc)###############
+################ (program : error_c.bc)###############
 -------------------------------------------------------
 TotalTime           0
 ConnDirEdgeTime     0
@@ -219,26 +219,26 @@ TLNodeTime          0
 ATNodeTime          0
 OptTime             0
 AvgWeight           1
-TotalNode           76
-FormalIn            2
-FormalOut           2
-FormalParam         7
-FormalRet           0
-ActualIn            0
-ActualOut           0
-ActualParam         13
+TotalNode           71
+FormalIn            3
+FormalOut           3
+FormalParam         2
+FormalRet           1
+ActualIn            1
+ActualOut           1
+ActualParam         5
 ActualRet           0
 Addr                26
-Copy                13
-Gep                 4
-PHI                 0
-TotalEdge           40
-DirectEdge          38
-IndirectEdge        2
-IndirectEdgeLabels  2
+Copy                3
+Gep                 13
+PHI                 1
+TotalEdge           39
+DirectEdge          33
+IndirectEdge        6
+IndirectEdgeLabels  6
 IndCallEdge         0
 IndRetEdge          0
-DirectCallEdge      2
+DirectCallEdge      0
 DirectRetEdge       0
 AvgInDegree         0
 AvgOutDegree        0
@@ -247,8 +247,8 @@ MaxOutDegree        5
 AvgIndInDeg         1
 AvgIndOutDeg        1
 MaxIndInDeg         1
-MaxIndOutDeg        1
+MaxIndOutDeg        2
 MSSAPhi             0
-Load                2
-Store               6
+Load                1
+Store               10
 #######################################################

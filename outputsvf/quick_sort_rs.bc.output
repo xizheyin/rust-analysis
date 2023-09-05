@@ -3,10 +3,10 @@
 ################ (program : quick_sort_rs.bc)###############
 -------------------------------------------------------
 TotalNode           13
+TotalEdge           16
 TotalCycle          1
 MaxNodeInCycle      1
 NodeInCycle         1
-TotalEdge           16
 CalRetPairInCycle   1
 #######################################################
 
@@ -54,7 +54,6 @@ AvgIn/OutCopyEdge   0.464286
 AvgIn/OutLoadEdge   0.0178571
 AvgIn/OutAddrEdge   0.303571
 AvgIn/OutEdge       0.875
-LocalVarInRecur     0
 NumOfCGNode         262
 TotalValidNode      112
 TotalValidObjNode   31
@@ -73,6 +72,7 @@ MaxOutStoreEdge     4
 AvgIn/OutStoreEdge  0
 MaxInAddrEdge       1
 MaxOutAddrEdge      12
+LocalVarInRecur     0
 #######################################################
 
 *********Andersen Pointer Analysis Stats***************
@@ -143,21 +143,21 @@ InsertPHITime       0
 GenMUCHITime        0
 GenRegionTime       0
 TotalMSSATime       0.001
-BBHasMSSAPhi        5
-MSSAPhi             5
-StoreHasChi         9
-LoadHasMu           5
-CSHasMu             2
-CSHasChi            2
+BBHasMSSAPhi        0
+MSSAPhi             0
+StoreHasChi         2
+LoadHasMu           2
+CSHasMu             0
+CSHasChi            0
 FunHasRetMu         8
-FunHasEntryChi      4
-StoreChiNode        9
-LoadMuNode          3
-CSMuNode            2
-CSChiNode           2
-FunRetMu            5
-FunEntryChi         5
-MemRegions          4
+FunHasEntryChi      2
+StoreChiNode        2
+LoadMuNode          0
+CSMuNode            0
+CSChiNode           0
+FunRetMu            2
+FunEntryChi         2
+MemRegions          2
 MaxRegSize          1
 #######################################################
 
@@ -173,36 +173,82 @@ TLNodeTime          0
 ATNodeTime          0
 OptTime             0
 AvgWeight           1
-TotalNode           238
-TotalEdge           219
-FormalIn            5
-FormalOut           5
-FormalParam         12
-FormalRet           4
-ActualIn            2
-ActualOut           2
-ActualParam         41
-ActualRet           2
-Addr                48
-Copy                23
+TotalNode           119
+FormalIn            2
+FormalOut           2
+FormalParam         8
+FormalRet           0
+ActualIn            0
+ActualOut           0
+ActualParam         21
+ActualRet           0
+Addr                34
+Copy                21
 Gep                 18
-PHI                 16
-DirectEdge          185
-IndirectEdge        34
-IndirectEdgeLabels  34
-IndCallEdge         2
-IndRetEdge          2
-DirectCallEdge      8
+PHI                 0
+TotalEdge           76
+DirectEdge          74
+IndirectEdge        2
+IndirectEdgeLabels  2
+IndCallEdge         0
+IndRetEdge          0
+DirectCallEdge      4
 DirectRetEdge       0
 AvgInDegree         0
 AvgOutDegree        0
-MaxInDegree         3
+MaxInDegree         2
 MaxOutDegree        7
 AvgIndInDeg         1
 AvgIndOutDeg        1
-MaxIndInDeg         3
-MaxIndOutDeg        4
-MSSAPhi             5
-Load                5
-Store               17
+MaxIndInDeg         1
+MaxIndOutDeg        1
+MSSAPhi             0
+Load                2
+Store               10
+#######################################################
+
+****SVFG Statistics****
+
+************************
+################ (program : quick_sort_rs.bc)###############
+-------------------------------------------------------
+TotalTime           0
+ConnDirEdgeTime     0
+ConnIndEdgeTime     0
+TLNodeTime          0
+ATNodeTime          0
+OptTime             0
+AvgWeight           1
+TotalNode           119
+FormalIn            2
+FormalOut           2
+FormalParam         8
+FormalRet           0
+ActualIn            0
+ActualOut           0
+ActualParam         21
+ActualRet           0
+Addr                34
+Copy                21
+Gep                 18
+PHI                 0
+TotalEdge           76
+DirectEdge          74
+IndirectEdge        2
+IndirectEdgeLabels  2
+IndCallEdge         0
+IndRetEdge          0
+DirectCallEdge      4
+DirectRetEdge       0
+AvgInDegree         0
+AvgOutDegree        0
+MaxInDegree         2
+MaxOutDegree        7
+AvgIndInDeg         1
+AvgIndOutDeg        1
+MaxIndInDeg         1
+MaxIndOutDeg        1
+MSSAPhi             0
+Load                2
+Store               10
 #######################################################

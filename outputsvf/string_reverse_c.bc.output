@@ -3,10 +3,10 @@
 ################ (program : string_reverse_c.bc)###############
 -------------------------------------------------------
 TotalNode           6
+TotalEdge           4
 TotalCycle          0
 MaxNodeInCycle      0
 NodeInCycle         0
-TotalEdge           4
 CalRetPairInCycle   0
 #######################################################
 
@@ -54,7 +54,6 @@ AvgIn/OutCopyEdge   0.457143
 AvgIn/OutLoadEdge   0.0142857
 AvgIn/OutAddrEdge   0.342857
 AvgIn/OutEdge       0.928571
-LocalVarInRecur     0
 NumOfCGNode         180
 TotalValidNode      70
 TotalValidObjNode   17
@@ -73,6 +72,7 @@ MaxOutStoreEdge     1
 AvgIn/OutStoreEdge  0
 MaxInAddrEdge       1
 MaxOutAddrEdge      12
+LocalVarInRecur     0
 #######################################################
 
 *********Andersen Pointer Analysis Stats***************
@@ -143,21 +143,21 @@ InsertPHITime       0
 GenMUCHITime        0
 GenRegionTime       0
 TotalMSSATime       0
-BBHasMSSAPhi        3
-MSSAPhi             3
-StoreHasChi         9
-LoadHasMu           8
+BBHasMSSAPhi        0
+MSSAPhi             0
+StoreHasChi         1
+LoadHasMu           1
 CSHasMu             0
 CSHasChi            0
 FunHasRetMu         1
 FunHasEntryChi      1
-StoreChiNode        9
-LoadMuNode          8
+StoreChiNode        1
+LoadMuNode          1
 CSMuNode            0
 CSChiNode           0
 FunRetMu            2
 FunEntryChi         2
-MemRegions          6
+MemRegions          4
 MaxRegSize          1
 #######################################################
 
@@ -173,36 +173,82 @@ TLNodeTime          0
 ATNodeTime          0
 OptTime             0
 AvgWeight           1
-TotalNode           152
-TotalEdge           155
+TotalNode           70
 FormalIn            2
 FormalOut           2
-FormalParam         4
+FormalParam         2
 FormalRet           0
 ActualIn            0
 ActualOut           0
-ActualParam         9
-ActualRet           1
-Addr                39
-Copy                3
+ActualParam         5
+ActualRet           0
+Addr                24
+Copy                2
 Gep                 23
-PHI                 3
-DirectEdge          128
-IndirectEdge        27
-IndirectEdgeLabels  27
+PHI                 0
+TotalEdge           42
+DirectEdge          38
+IndirectEdge        4
+IndirectEdgeLabels  4
 IndCallEdge         0
 IndRetEdge          0
 DirectCallEdge      0
 DirectRetEdge       0
-AvgInDegree         1
-AvgOutDegree        1
-MaxInDegree         4
+AvgInDegree         0
+AvgOutDegree        0
+MaxInDegree         2
 MaxOutDegree        13
 AvgIndInDeg         1
 AvgIndOutDeg        1
-MaxIndInDeg         4
-MaxIndOutDeg        4
-MSSAPhi             3
-Load                8
-Store               19
+MaxIndInDeg         1
+MaxIndOutDeg        2
+MSSAPhi             0
+Load                1
+Store               8
+#######################################################
+
+****SVFG Statistics****
+
+************************
+################ (program : string_reverse_c.bc)###############
+-------------------------------------------------------
+TotalTime           0
+ConnDirEdgeTime     0
+ConnIndEdgeTime     0
+TLNodeTime          0
+ATNodeTime          0
+OptTime             0
+AvgWeight           1
+TotalNode           70
+FormalIn            2
+FormalOut           2
+FormalParam         2
+FormalRet           0
+ActualIn            0
+ActualOut           0
+ActualParam         5
+ActualRet           0
+Addr                24
+Copy                2
+Gep                 23
+PHI                 0
+TotalEdge           42
+DirectEdge          38
+IndirectEdge        4
+IndirectEdgeLabels  4
+IndCallEdge         0
+IndRetEdge          0
+DirectCallEdge      0
+DirectRetEdge       0
+AvgInDegree         0
+AvgOutDegree        0
+MaxInDegree         2
+MaxOutDegree        13
+AvgIndInDeg         1
+AvgIndOutDeg        1
+MaxIndInDeg         1
+MaxIndOutDeg        2
+MSSAPhi             0
+Load                1
+Store               8
 #######################################################

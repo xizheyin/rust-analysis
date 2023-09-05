@@ -2,45 +2,45 @@
 *********CallGraph Stats***************
 ################ (program : array_loop_c.bc)###############
 -------------------------------------------------------
-TotalNode           2
+TotalNode           4
+TotalEdge           3
 TotalCycle          0
 MaxNodeInCycle      0
 NodeInCycle         0
-TotalEdge           10
 CalRetPairInCycle   0
 #######################################################
 
 *********General Stats***************
 ################ (program : array_loop_c.bc)###############
-BBWith2Succ         0
+BBWith2Succ         1
 BBWith3Succ         0
-TotalPointers       60
-TotalObjects        5
-TotalFieldObjects   0
+TotalPointers       178
+TotalObjects        8
+TotalFieldObjects   1
 MaxStructSize       5
-TotalSVFStmts       37
-TotalPTASVFStmts    26
+TotalSVFStmts       157
+TotalPTASVFStmts    71
 FIObjNum            0
-FSObjNum            4
-AddrsNum            26
-LoadsNum            0
-StoresNum           0
-CopysNum            1
-GepsNum             10
+FSObjNum            7
+AddrsNum            73
+LoadsNum            1
+StoresNum           25
+CopysNum            27
+GepsNum             26
 CallsNum            0
 ReturnsNum          0
-FunctionObjs        2
+FunctionObjs        4
 GlobalObjs          1
 HeapObjs            0
-StackObjs           0
+StackObjs           1
 VarStructObj        1
-VarArrayObj         1
+VarArrayObj         2
 ConstStructObj      0
 ConstArrayObj       0
-NonPtrObj           3
+NonPtrObj           6
 ConstantObj         0
 IndCallSites        0
-TotalCallSite       10
+TotalCallSite       3
 -------------------------------------------------------
 LLVMIRTime          0.003
 SymbolTableTime     0
@@ -50,22 +50,21 @@ SVFIRTime           0
 *********Constraint Graph Stats***************
 ################ (program : array_loop_c.bc)###############
 -------------------------------------------------------
-AvgIn/OutCopyEdge   0.354839
+AvgIn/OutCopyEdge   0.670886
 AvgIn/OutLoadEdge   0
-AvgIn/OutAddrEdge   0.483871
-AvgIn/OutEdge       0.83871
-LocalVarInRecur     0
-NumOfCGNode         70
-TotalValidNode      31
-TotalValidObjNode   4
-NumOfCGEdge         11
-NumOfAddrs          15
-NumOfCopys          1
-NumOfGeps           10
+AvgIn/OutAddrEdge   0.227848
+AvgIn/OutEdge       0.898734
+NumOfCGNode         194
+TotalValidNode      79
+TotalValidObjNode   7
+NumOfCGEdge         53
+NumOfAddrs          18
+NumOfCopys          27
+NumOfGeps           26
 NumOfLoads          0
 NumOfStores         0
 MaxInCopyEdge       1
-MaxOutCopyEdge      10
+MaxOutCopyEdge      27
 MaxInLoadEdge       0
 MaxOutLoadEdge      0
 MaxInStoreEdge      0
@@ -73,6 +72,7 @@ MaxOutStoreEdge     0
 AvgIn/OutStoreEdge  0
 MaxInAddrEdge       1
 MaxOutAddrEdge      12
+LocalVarInRecur     0
 #######################################################
 
 *********Andersen Pointer Analysis Stats***************
@@ -84,23 +84,23 @@ SCCMergeTime        0
 LoadStoreTime       0
 CopyGepTime         0
 UpdateCGTime        0
-AvgPtsSetSize       0.357143
-AvgTopLvlPtsSize    0.961538
+AvgPtsSetSize       0.360825
+AvgTopLvlPtsSize    0.985915
 CollapseTime        0
-Pointers            60
-TotalPointers       60
-TotalObjects        5
+Pointers            178
+TotalPointers       178
+TotalObjects        9
 IndCallSites        0
-AddrProcessed       15
-CopyProcessed       0
-GepProcessed        10
+AddrProcessed       18
+CopyProcessed       26
+GepProcessed        26
 LoadProcessed       0
 StoreProcessed      0
 NumOfSFRs           0
 NumOfFieldExpand    0
-MemObjects          5
+MemObjects          8
 DummyFieldPtrs      0
-FieldObjs           0
+FieldObjs           1
 MaxPtsSetSize       1
 SolveIterations     1
 IndEdgeSolved       0
@@ -116,14 +116,14 @@ PointsToBlkPtr      0
 
 ****Persistent Points-To Cache Statistics: Andersen's analysis bitvector****
 ################ (program : array_loop_c.bc)###############
-UniquePointsToSets       5
-TotalUnions              25
-PropertyUnions           25
+UniquePointsToSets       9
+TotalUnions              70
+PropertyUnions           70
 UniqueUnions             0
 LookupUnions             0
 PreemptiveUnions         0
-TotalComplements         70
-PropertyComplements      70
+TotalComplements         193
+PropertyComplements      193
 UniqueComplements        0
 LookupComplements        0
 PreemptiveComplements    0
@@ -173,21 +173,21 @@ TLNodeTime          0
 ATNodeTime          0
 OptTime             0
 AvgWeight           0
-TotalNode           68
-TotalEdge           21
+TotalNode           75
 FormalIn            0
 FormalOut           0
 FormalParam         0
 FormalRet           0
 ActualIn            0
 ActualOut           0
-ActualParam         20
-ActualRet           10
-Addr                26
-Copy                1
-Gep                 10
+ActualParam         3
+ActualRet           0
+Addr                18
+Copy                27
+Gep                 26
 PHI                 0
-DirectEdge          21
+TotalEdge           56
+DirectEdge          56
 IndirectEdge        0
 IndirectEdgeLabels  0
 IndCallEdge         0
@@ -197,7 +197,53 @@ DirectRetEdge       0
 AvgInDegree         0
 AvgOutDegree        0
 MaxInDegree         1
-MaxOutDegree        10
+MaxOutDegree        27
+AvgIndInDeg         0
+AvgIndOutDeg        0
+MaxIndInDeg         0
+MaxIndOutDeg        0
+MSSAPhi             0
+Load                0
+Store               0
+#######################################################
+
+****SVFG Statistics****
+
+************************
+################ (program : array_loop_c.bc)###############
+-------------------------------------------------------
+TotalTime           0
+ConnDirEdgeTime     0
+ConnIndEdgeTime     0
+TLNodeTime          0
+ATNodeTime          0
+OptTime             0
+AvgWeight           0
+TotalNode           75
+FormalIn            0
+FormalOut           0
+FormalParam         0
+FormalRet           0
+ActualIn            0
+ActualOut           0
+ActualParam         3
+ActualRet           0
+Addr                18
+Copy                27
+Gep                 26
+PHI                 0
+TotalEdge           56
+DirectEdge          56
+IndirectEdge        0
+IndirectEdgeLabels  0
+IndCallEdge         0
+IndRetEdge          0
+DirectCallEdge      0
+DirectRetEdge       0
+AvgInDegree         0
+AvgOutDegree        0
+MaxInDegree         1
+MaxOutDegree        27
 AvgIndInDeg         0
 AvgIndOutDeg        0
 MaxIndInDeg         0

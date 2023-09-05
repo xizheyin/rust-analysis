@@ -3,10 +3,10 @@
 ################ (program : calculate_average_c.bc)###############
 -------------------------------------------------------
 TotalNode           1
+TotalEdge           0
 TotalCycle          0
 MaxNodeInCycle      0
 NodeInCycle         0
-TotalEdge           0
 CalRetPairInCycle   0
 #######################################################
 
@@ -43,7 +43,7 @@ IndCallSites        0
 TotalCallSite       0
 -------------------------------------------------------
 LLVMIRTime          0.002
-SymbolTableTime     0
+SymbolTableTime     0.001
 SVFIRTime           0
 #######################################################
 
@@ -54,7 +54,6 @@ AvgIn/OutCopyEdge   0.0555556
 AvgIn/OutLoadEdge   0
 AvgIn/OutAddrEdge   0.722222
 AvgIn/OutEdge       0.777778
-LocalVarInRecur     0
 NumOfCGNode         33
 TotalValidNode      18
 TotalValidObjNode   3
@@ -73,6 +72,7 @@ MaxOutStoreEdge     0
 AvgIn/OutStoreEdge  0
 MaxInAddrEdge       1
 MaxOutAddrEdge      11
+LocalVarInRecur     0
 #######################################################
 
 *********Andersen Pointer Analysis Stats***************
@@ -173,8 +173,7 @@ TLNodeTime          0
 ATNodeTime          0
 OptTime             0
 AvgWeight           0
-TotalNode           16
-TotalEdge           1
+TotalNode           15
 FormalIn            0
 FormalOut           0
 FormalParam         0
@@ -183,10 +182,57 @@ ActualIn            0
 ActualOut           0
 ActualParam         0
 ActualRet           0
-Addr                14
+Addr                13
 Copy                1
 Gep                 0
 PHI                 0
+TotalEdge           1
+DirectEdge          1
+IndirectEdge        0
+IndirectEdgeLabels  0
+IndCallEdge         0
+IndRetEdge          0
+DirectCallEdge      0
+DirectRetEdge       0
+AvgInDegree         0
+AvgOutDegree        0
+MaxInDegree         1
+MaxOutDegree        1
+AvgIndInDeg         0
+AvgIndOutDeg        0
+MaxIndInDeg         0
+MaxIndOutDeg        0
+MSSAPhi             0
+Load                0
+Store               0
+#######################################################
+
+****SVFG Statistics****
+
+************************
+################ (program : calculate_average_c.bc)###############
+-------------------------------------------------------
+TotalTime           0
+ConnDirEdgeTime     0
+ConnIndEdgeTime     0
+TLNodeTime          0
+ATNodeTime          0
+OptTime             0
+AvgWeight           0
+TotalNode           15
+FormalIn            0
+FormalOut           0
+FormalParam         0
+FormalRet           0
+ActualIn            0
+ActualOut           0
+ActualParam         0
+ActualRet           0
+Addr                13
+Copy                1
+Gep                 0
+PHI                 0
+TotalEdge           1
 DirectEdge          1
 IndirectEdge        0
 IndirectEdgeLabels  0

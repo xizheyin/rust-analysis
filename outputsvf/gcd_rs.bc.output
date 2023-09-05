@@ -3,10 +3,10 @@
 ################ (program : gcd_rs.bc)###############
 -------------------------------------------------------
 TotalNode           11
+TotalEdge           8
 TotalCycle          0
 MaxNodeInCycle      0
 NodeInCycle         0
-TotalEdge           8
 CalRetPairInCycle   0
 #######################################################
 
@@ -54,7 +54,6 @@ AvgIn/OutCopyEdge   0.357143
 AvgIn/OutLoadEdge   0.0285714
 AvgIn/OutAddrEdge   0.371429
 AvgIn/OutEdge       0.842857
-LocalVarInRecur     0
 NumOfCGNode         146
 TotalValidNode      70
 TotalValidObjNode   20
@@ -73,6 +72,7 @@ MaxOutStoreEdge     2
 AvgIn/OutStoreEdge  0
 MaxInAddrEdge       1
 MaxOutAddrEdge      11
+LocalVarInRecur     0
 #######################################################
 
 *********Andersen Pointer Analysis Stats***************
@@ -173,30 +173,76 @@ TLNodeTime          0
 ATNodeTime          0
 OptTime             0
 AvgWeight           1
-TotalNode           108
-TotalEdge           67
+TotalNode           76
 FormalIn            2
 FormalOut           2
-FormalParam         9
-FormalRet           4
+FormalParam         7
+FormalRet           0
 ActualIn            0
 ActualOut           0
-ActualParam         19
-ActualRet           2
-Addr                32
-Copy                15
+ActualParam         13
+ActualRet           0
+Addr                26
+Copy                13
 Gep                 4
-PHI                 6
-DirectEdge          63
-IndirectEdge        4
-IndirectEdgeLabels  4
+PHI                 0
+TotalEdge           40
+DirectEdge          38
+IndirectEdge        2
+IndirectEdgeLabels  2
 IndCallEdge         0
 IndRetEdge          0
 DirectCallEdge      2
 DirectRetEdge       0
 AvgInDegree         0
 AvgOutDegree        0
-MaxInDegree         3
+MaxInDegree         2
+MaxOutDegree        5
+AvgIndInDeg         1
+AvgIndOutDeg        1
+MaxIndInDeg         1
+MaxIndOutDeg        1
+MSSAPhi             0
+Load                2
+Store               6
+#######################################################
+
+****SVFG Statistics****
+
+************************
+################ (program : gcd_rs.bc)###############
+-------------------------------------------------------
+TotalTime           0
+ConnDirEdgeTime     0
+ConnIndEdgeTime     0
+TLNodeTime          0
+ATNodeTime          0
+OptTime             0
+AvgWeight           1
+TotalNode           76
+FormalIn            2
+FormalOut           2
+FormalParam         7
+FormalRet           0
+ActualIn            0
+ActualOut           0
+ActualParam         13
+ActualRet           0
+Addr                26
+Copy                13
+Gep                 4
+PHI                 0
+TotalEdge           40
+DirectEdge          38
+IndirectEdge        2
+IndirectEdgeLabels  2
+IndCallEdge         0
+IndRetEdge          0
+DirectCallEdge      2
+DirectRetEdge       0
+AvgInDegree         0
+AvgOutDegree        0
+MaxInDegree         2
 MaxOutDegree        5
 AvgIndInDeg         1
 AvgIndOutDeg        1
